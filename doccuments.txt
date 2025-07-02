@@ -20,6 +20,10 @@ install môi trường dùng docker desktop
     run:  docker-compose up
 5. Cấu hình github
     create folder: .github -> workflows -> checks.yml
+    Push gihub: 
+        git add .
+        git commit -an "Added github Action"
+        git push origin
 
 
     chú ý:
