@@ -1,0 +1,19 @@
+#git
+.git # Bỏ qua thư mục lịch sử của Git và file .gitignore.
+.gitignore # Bỏ qua thư mục lịch sử của Git và file .gitignore.
+
+#Docker
+.docker
+
+#Python
+app/__pycache__/
+app/*/__pycache__/
+app/*/__pycache__/
+app/*/*/__pycache__/
+app/*/*/*/__pycache__/
+.env/
+.venv/
+venv/
+
+#__pycache__: Thư mục cache do Python tạo ra, không cần thiết trong image.
+#.env/, venv/, env/: Bỏ qua các thư mục môi trường ảo được tạo trên máy cục bộ.
