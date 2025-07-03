@@ -24,7 +24,6 @@ install môi trường dùng docker desktop
         git add .
         git commit -an "Added github Action"
         git push origin
-        token: dckr_pat_zB3nxzBE2eb2Zgg6rW1DT6Um7xo
 
     chú ý:
     -  checks.yml: kiểm tra người dùng ẩn danh (được 100/6h) và kiểm tra người dùng đang nhập bằng token (được 200/6h pull)

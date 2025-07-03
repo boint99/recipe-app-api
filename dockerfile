@@ -2,7 +2,7 @@
 FROM python:3.9-alpine3.13
 
 # 2. Maintainer
-LABEL maintainer="TieuBoiHocCode"
+LABEL maintainer="boint99"
 
 # 3. Config Python
 ENV PYTHONUNBUFFERED=1
