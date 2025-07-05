@@ -27,3 +27,21 @@ install môi trường dùng docker desktop
 
     chú ý:
     -  checks.yml: kiểm tra người dùng ẩn danh (được 100/6h) và kiểm tra người dùng đang nhập bằng token (được 200/6h pull)
+5. viết test với TDD:
+ - khái niệm TDD
+ - khai niệm mocking
+6. Databases
+    - Add database trong docker-compose
+    - run: docker-compose up
+7. Cài đặt Install ProstGreSQL
+8. Cấu hình database in django
+    import os
+    setting => DATABASE = {
+        "default": {
+            'ENGINE": 'django.db.backends.postgresql',
+            'HOST': os.environ.get('DB_HOST'),
+            'NAME': os.environ.get('DB_NAME'),
+            'USER': os.environ.get('DB_USER'),
+            'PASSWORD': os.environ.get('DB_PASS'),
+        }
+    }
