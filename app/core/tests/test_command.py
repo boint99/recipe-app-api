@@ -26,7 +26,7 @@ class CommandTests(SimpleTestCase):
 
     def test_wait_for_db_delay(self):
         """Test waiting for database when getting OperationalError"""
-        with patch('time.sleep') as patched_sleep:
+        with patch('time.sleep'):
             with patch.object(BaseCommand, 'check') as patched_check:
                 patched_check.side_effect = [Psycopg2Error] * 2 + \
                     [Psycopg2Error] * 3 + [True]
