@@ -29,7 +29,7 @@ class CommandTests(SimpleTestCase):
         with patch('time.sleep') as patched_sleep:
             with patch.object(BaseCommand, 'check') as patched_check:
                 patched_check.side_effect = [Psycopg2Error] * 2 + \
-                [Psycopg2Error] * 3 + [True]
+                    [Psycopg2Error] * 3 + [True]
 
                 call_command("wait_for_db")
 
